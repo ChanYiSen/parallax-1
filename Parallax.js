@@ -321,6 +321,7 @@ function Parallax (scene, options) {
 
 Parallax.prototype.isTypeOf = function (element, type) {
 	var feedback = null;
+	if (!element) { return feedback };
 	switch (type) {
 		case ('number'):
 			var n = parseFloat(element);
