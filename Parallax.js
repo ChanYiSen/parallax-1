@@ -223,19 +223,6 @@ function Parallax (scene, options) {
 	var screenHeight, screenWidth;
 
 	Parallax.prototype.setScreenParameters = function (e) {
-
-		// var scrollHeight = Math.max(
-		// 	document.body.scrollHeight, document.documentElement.scrollHeight,
-		// 	document.body.offsetHeight, document.documentElement.offsetHeight,
-		// 	document.body.clientHeight, document.documentElement.clientHeight
-		// 	);
-		// var scrollWidth = Math.max(
-		// 	document.body.scrollWidth, document.documentElement.scrollWidth,
-		// 	document.body.offsetWidth, document.documentElement.offsetWidth,
-		// 	document.body.clientWidth, document.documentElement.clientWidth
-		// 	);
-		// Parallax.prototype.screenHeight = scrollHeight;
-		// Parallax.prototype.screenWidth = scrollWidth;
 		var screenHeight = document.documentElement.clientHeight;
 		var screenWidth = document.documentElement.clientWidth;
 
@@ -332,11 +319,8 @@ function Parallax (scene, options) {
 
 })();
 
-
-
 Parallax.prototype.isTypeOf = function (element, type) {
 	var feedback = null;
-	if (!element) { return feedback };
 	switch (type) {
 		case ('number'):
 			var n = parseFloat(element);
